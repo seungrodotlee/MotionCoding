@@ -1,0 +1,486 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all .5s;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+#computer {
+  position: absolute;
+  width: 500px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 2;
+}
+
+#monitorWrap {
+  position: relative;
+  height: 400px;
+  width: 500px;
+  background: #ead7b5;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#monitorWrap2 {
+  position: relative;
+  height: 340px;
+  width: 440px;
+  background: #ccb894;
+  left: 30px;
+  top: 30px;
+  border-radius: 15px;
+}
+
+#monitorWrap3 {
+  position: relative;
+  height: 320px;
+  width: 420px;
+  background: #343131;
+  left: 10px;
+  top: 10px;
+  border-radius: 15px;
+}
+
+#monitor {
+  position: relative;
+  height: 300px;
+  width: 400px;
+  background: #01aadd;
+  left: 10px;
+  top: 10px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#monitorShadow {
+  position: relative;
+  height: 120%;
+  width: 70%;
+  top: -10%;
+  left: -10%;
+  background: #74c8ea;
+  transform: rotate(10deg);
+}
+
+#neck {
+  position: relative;
+  width: 400px;
+  height: 10px;
+  left: 50px;
+  background: #7e7363;
+  overflow: hidden;
+}
+
+#computerBody {
+  position: relative;
+  height: 200px;
+  width: 540px;
+  left: -20px;
+  background: #ead7b5;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#btn {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin-left: 10px;
+  background: #a38962;
+  float: left;
+}
+
+#btnWrap {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+}
+
+#disk {
+  position: relative;
+  height: 50px;
+  width: 150px;
+  background: grey;
+  margin-bottom: 10px;
+}
+
+#diskWrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+#line {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  height: 10px;
+  width: 130px;
+  background: #383838;
+}
+
+#square {
+  position: absolute;
+  height: 20px;
+  width: 40px;
+  top: 15px;
+  left: 55px;
+  background: #383838;
+}
+
+#squareBtn {
+  position: absolute;
+  height: 8px;
+  width: 35px;
+  top: 35px;
+  right: 10px;
+  background: #ead7b5;
+}
+
+#air {
+  position: relative;
+  display: inline-block;
+  height: 60px;
+  width: 10px;
+  top: 0;
+  margin-right: 5px;
+  background: #71695c;
+  opacity: 0.6;
+}
+
+#airWrap {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  height: 60px;
+  overflow: hidden;
+}
+
+.scaleOff {
+  height: 0 !important;
+  width: 0 !important;
+}
+
+.scaleXOff {
+  width: 0 !important;
+}
+
+.goUp {
+  top: 60px !important;
+}
+
+#newComputerMonitorWrap {
+  position: relative;
+  width: 700px;
+  height: 400px;
+  left: -100px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #252627;
+  overflow: hidden;
+}
+
+#newMonitor {
+  position: relative;
+  width: 640px;
+  height: 340px;
+  top: 30px;
+  left: 30px;
+  background: #3a3c40;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#newMonitorBottom {
+  position: relative;
+  width: 700px;
+  height: 60px;
+  left: -100px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #f0f5ff;
+  overflow: hidden;
+}
+
+#logo {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  top: 15px;
+  left: 335px;
+  background: #a5b0c6;
+}
+
+.newNeck {
+  display: block !important;
+  height: 60px !important;
+  width: 200px !important;
+  left: 150px !important;
+  background: #e1e7f4 !important;
+}
+
+#neckShadow {
+  position: absolute;
+  height: 70%;
+  width: 110%;
+  top: -115%;
+  left: -5%;
+  background: #bbc4d8;
+}
+
+.shadowOn {
+  top: -15% !important;
+  transform: rotate(3deg) !important;
+}
+
+.newComputerFoot {
+  display: block !important;
+  height: 10px !important;
+  width: 300px !important;
+  left: 100px !important;
+  background: #929cb2 !important;
+  border-radius: 0 !important;
+}
+
+.newComputerFoot * {
+  opacity: 0;
+}
+
+.scaleYOff {
+  height: 0 !important;
+}
+
+#firstText {
+  position: relative;
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  color: #3a3c40;
+  width: 200px;
+  z-index: 2;
+}
+
+#firstText::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  transition: all .5s;
+}
+
+.textOn::after {
+  width: 100% !important;
+}
+
+#jju {
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+  height: 0px;
+  top: 40px;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.raiseUp {
+  height: 40px !important;
+  top: 0 !important;
+}
+
+#textWrap {
+  position: relative;
+  top: 50%;
+  height: 100px;
+  transform: translateY(-50%);
+  text-align: center;
+  background: #3a3c40;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#textWrap div {
+  display: inline-block;
+}
+
+#hw {
+  position: absolute;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
+
+#intro {
+  position: relative;
+  text-align: center;
+  font-size: 100px;
+  font-weight: 900;
+  height: 100%;
+}
+
+#introText2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  opacity: 0;
+  transition: all 0s;
+}
+
+#textMove {
+  position: relative;
+  left: -400px;
+  z-index: 1;
+  transition: all 2s ease-in-out;
+}
+
+#textMove::after {
+  content: "";
+  position: absolute;
+  height: 80%;
+  width: 0%;
+  top: 20%;
+  left: calc(400px + 10%);
+  background: #b2dded;
+  z-index: -1;
+  opacity: 0.2;
+  transition: all 2s ease-in-out;
+}
+
+.textGo::after {
+  opacity: 1 !important;
+  left: 10% !important;
+  width: 100% !important;
+}
+
+.textGo {
+  left: 0 !important;
+}
+
+#introText1 {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-right: 200px;
+  top: 50%;
+  left: 100px;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 1s;
+}
+
+#textWorld {
+  position: relative;
+  display: inline-block;
+  background: white;
+  padding-bottom: 10px;
+  z-index: 2;
+}
+
+.letterPiece {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  opacity: 0;
+  transition: all 0s;
+}
+
+.blocker {
+  position: absolute;
+  transform: 0;
+  height: 100%;
+  width: 100%;
+  background: black;
+}
+
+.back {
+  position: absolute;
+  height: 150vw;
+  width: 150vw;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 50%;
+  background: #e8993d;
+  z-index: 1;
+  transition: all 1s;
+}
+
+#newback {
+  background: #3469be;
+}
+
+.phoneWrap {
+  left: 125px!important;
+  height: 440px !important;
+  width: 250px !important;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.phoneMonitor {
+  left: 10px !important;
+  width: 230px !important;
+  height: 420px !important;
+  top: 10px !important;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#myName {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 900;
+  top: 50%;
+  left: 50%;
+  width: 150px;
+  transform: translateX(-50%) translateY(-50%);
+  color: #3469be;
+  background: white;
+  z-index: 10;
+  padding: 0;
+  overflow: hidden;
+}
+
+#lastback {
+  background: #2c2c4b;
+}
+
+#innerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
